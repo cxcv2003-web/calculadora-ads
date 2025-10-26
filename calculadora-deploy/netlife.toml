@@ -1,0 +1,14 @@
+# Este archivo le dice a Netlify dónde encontrar tus funciones.
+# Lo hemos hecho más explícito.
+
+# Le decimos a Netlify que no hay un comando de "build"
+# pero que el directorio de funciones SÍ existe.
+[build]
+  command = "echo 'No build command needed'"
+  functions = "netlify/functions"
+  publish = "/" # El publish directory es la raíz
+
+# Volvemos a definir el directorio de funciones
+[functions]
+  directory = "netlify/functions"
+
